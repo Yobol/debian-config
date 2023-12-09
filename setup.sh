@@ -3,6 +3,7 @@
 sudo apt-get update &&
      apt-get install -y --no-install-recommends \
      vim \
+     git \
      zsh
 
 KERNEL=`uname`
@@ -21,5 +22,8 @@ fi
 PWD=`pwd`
 
 # vim
-${RM} ~/.vimrc && ${LN} -sT ${PWD}/.vimrc ~/.vimrc
-${RMDIR} ~/.vim &&  ${LN} -sT ${PWD}/.vim ~/.vim
+${RM} -f ~/.vimrc && ${LN} -sT ${PWD}/vim/.vimrc ~/.vimrc
+${RMDIR} -f ~/.vim && ${LN} -sT ${PWD}/vim/.vim ~/.vim
+
+# git
+${RM} -f ~/.gitconfig && ${LN} -sT ${PWD}/git/.gitconfig ~/.gitconfig

@@ -1,0 +1,9 @@
+[user]
+	name = yobol
+	email = yobol1024@gmail.com
+
+[pull]
+	rebase = true # rebase automatically when pull from the remotes
+
+[core]
+	editor = vim # using vim as the default editor

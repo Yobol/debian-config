@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt-get update &&
-     apt-get install -y --no-install-recommends \
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
      vim \
      git \
      zsh

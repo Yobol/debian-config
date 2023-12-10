@@ -1,0 +1,585 @@
+version: 7
+groups:
+  - id: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    name: aistar
+    defaults:
+      ssh:
+        options:
+          algorithms: {}
+          input: {}
+configSync:
+  parts: {}
+hotkeys:
+  toggle-window:
+    - Ctrl-Space
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-up:
+    - Alt-PageUp
+  scroll-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  new-window:
+    - Ctrl-Shift-N
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen:
+    - F11
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  close-pane: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: AdventureTime
+    foreground: '#f8dcc0'
+    background: '#1f1d45'
+    cursor: '#efbf38'
+    colors:
+      - '#050404'
+      - '#bd0013'
+      - '#4ab118'
+      - '#e7741e'
+      - '#0f4ac6'
+      - '#665993'
+      - '#70a598'
+      - '#f8dcc0'
+      - '#4e7cbf'
+      - '#fc5f5a'
+      - '#9eff6e'
+      - '#efc11a'
+      - '#1997c6'
+      - '#9b5953'
+      - '#c8faf4'
+      - '#f6f5fb'
+  lightColorScheme:
+    name: Tabby Default Light
+    foreground: '#4d4d4c'
+    background: '#ffffff'
+    cursor: '#4d4d4c'
+    colors:
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+  customColorSchemes: []
+  profile: local:binzsh
+ssh:
+  knownHosts:
+    - host: ai-sh01.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: JSGjhX9NdG7TO3pSP73VbydNN5GMX5RTc0r5zD1dRL4=
+    - host: ai-sh02.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: V4HseJOOH+G6vRsAHtbYT8uhsW/Jk7pJt2rDnBabRVc=
+    - host: ai-sh03.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: tU0jwz4uaA4DwEDMxTyAFV0XJSOA24KCznHGhcpBYmY=
+    - host: ai-sz01.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: VBUpCgPW0eGbO1/vXFnT1At1yDesYXBquz/5EMIPmNg=
+    - host: ai-sz02.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: QL74K8OfhEHTB4Cf2JpsJg4YRB2m3Beuw8GxtsmpCwI=
+    - host: 172.16.24.101
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: NvTLuS7whoTRG0ufqQFCM2V9l6EWwPYwvdFnmSxJTh4=
+    - host: 172.16.24.102
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: SUSDcJ5Bv+sd89VHTx976GVy1SU5k2TQiIc5NcP2efI=
+clickableLinks: {}
+accessibility: {}
+appearance: {}
+hacks: {}
+providerBlacklist: []
+commandBlacklist: []
+language: en-US
+enableAnalytics: false
+enableWelcomeTab: false
+pluginBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+    type: ssh
+    options:
+      algorithms: {}
+      input: {}
+      user: yobol
+      auth: agent
+  local:
+    type: local
+    options:
+      env: {}
+profileBlacklist: []
+enableAutomaticUpdates: false
+profiles:
+  - icon: fas fa-server
+    options:
+      host: ai-sh01.aistar.info
+      algorithms: {}
+      input: {}
+      agentForward: true
+    weight: -1
+    name: ai-sh01.aistar.info
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    id: ssh:custom:ai-sh01.aistar.info:f38f934a-6d91-439d-8612-34231d07eea2
+    type: ssh
+  - icon: fas fa-server
+    options:
+      host: ai-sh02.aistar.info
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      forwardedPorts: []
+      scripts: []
+      privateKeys: []
+    weight: -1
+    name: ai-sh02.aistar.info
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    type: ssh
+    id: ssh:custom:ai-sh02.aistar.info:fd9b1774-3336-4eb8-a606-49a9d9fea6fa
+  - icon: fas fa-server
+    options:
+      host: ai-sh03.aistar.info
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      forwardedPorts: []
+      scripts: []
+      privateKeys: []
+    weight: -1
+    name: ai-sh03.aistar.info
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    type: ssh
+    id: ssh:custom:ai-sh03.aistar.info:5af26def-5aad-49d3-bc56-8bc0b1bc643d
+  - icon: fas fa-server
+    options:
+      host: ai-sz01.aistar.info
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      privateKeys: []
+      forwardedPorts: []
+      scripts: []
+    weight: -1
+    name: ai-sz01.aistar.info
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    type: ssh
+    id: ssh:custom:ai-sz01.aistar.info:5655543f-496d-4078-9162-479c1fbec315
+  - icon: fas fa-server
+    options:
+      host: ai-sz02.aistar.info
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      privateKeys: []
+      forwardedPorts: []
+      scripts: []
+    weight: -1
+    name: ai-sz02.aistar.info
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    id: ssh:custom:ai-sz01.aistar.info:ef03f8b2-73da-4aed-baca-bc346a538385
+    type: ssh
+  - icon: fas fa-server
+    options:
+      host: 172.16.24.101
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      forwardedPorts: []
+      scripts: []
+      privateKeys: []
+    weight: -1
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    name: sangfor-a800-gpu01
+    id: ssh:custom:a800-gpu01:41dbe7e4-3bad-4145-a464-a8547d8c6df0
+    type: ssh
+  - icon: fas fa-server
+    options:
+      host: 172.16.24.102
+      algorithms:
+        hmac:
+          - hmac-sha1
+          - hmac-sha1-etm@openssh.com
+          - hmac-sha2-256
+          - hmac-sha2-256-etm@openssh.com
+          - hmac-sha2-512
+          - hmac-sha2-512-etm@openssh.com
+        kex:
+          - curve25519-sha256
+          - curve25519-sha256@libssh.org
+          - diffie-hellman-group-exchange-sha256
+          - diffie-hellman-group14-sha256
+          - diffie-hellman-group15-sha512
+          - diffie-hellman-group16-sha512
+          - diffie-hellman-group17-sha512
+          - diffie-hellman-group18-sha512
+          - ecdh-sha2-nistp256
+          - ecdh-sha2-nistp384
+          - ecdh-sha2-nistp521
+        cipher:
+          - aes128-ctr
+          - aes128-gcm
+          - aes128-gcm@openssh.com
+          - aes192-ctr
+          - aes256-ctr
+          - aes256-gcm
+          - aes256-gcm@openssh.com
+        serverHostKey:
+          - ecdsa-sha2-nistp256
+          - ecdsa-sha2-nistp384
+          - ecdsa-sha2-nistp521
+          - rsa-sha2-256
+          - rsa-sha2-512
+          - ssh-ed25519
+          - ssh-rsa
+      input: {}
+      agentForward: true
+      forwardedPorts: []
+      scripts: []
+      privateKeys: []
+    weight: -1
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    name: sangfor-a800-gpu02
+    type: ssh
+    id: ssh:custom:sangfor-a800-gpu02:59a2b5d4-6892-4f1b-984b-667bcb1acf27
+

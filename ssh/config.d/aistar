@@ -1,0 +1,34 @@
+Host ai-sh01.aistar.info
+	HostName ai-sh01.aistar.info
+	User yobol
+	ForwardAgent yes
+
+Host ai-sh02.aistar.info
+	HostName ai-sh02.aistar.info
+	User yobol
+	ForwardAgent yes
+
+Host ai-sh03.aistar.info
+	HostName ai-sh03.aistar.info
+	User yobol
+	ForwardAgent yes
+
+Host ai-sz01.aistar.info
+	HostName ai-sz01.aistar.info
+	User yobol
+	ForwardAgent yes
+
+Host ai-sz02.aistar.info
+	HostName ai-sz02.aistar.info
+	User yobol
+	ForwardAgent yes
+
+Host a800-gpu01
+	HostName 172.16.24.101
+	User yobol
+	ForwardAgent yes
+
+Host a800-gpu02
+	HostName 172.16.24.102
+	User yobol
+	ForwardAgent yes

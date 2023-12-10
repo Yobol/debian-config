@@ -1,0 +1,5 @@
+Host *
+	User yobol
+	ForwardAgent yes
+
+Include config.d/*

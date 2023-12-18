@@ -32,3 +32,8 @@ Host a800-gpu02
 	HostName 172.16.24.102
 	User yobol
 	ForwardAgent yes
+
+Host k8s-gateway
+	HostName k8s.aistar.info
+	User yobol
+	ForwardAgent yes

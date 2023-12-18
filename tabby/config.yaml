@@ -173,6 +173,11 @@ hotkeys:
     - Ctrl-Shift-E
   command-selector:
     - Ctrl-Shift-P
+  workspace-profile-1: []
+  workspace-profile-2: []
+  workspace-profile-3: []
+  workspace-profile-4: []
+  workspace-profile-5: []
 terminal:
   searchOptions: {}
   colorScheme:
@@ -251,6 +256,10 @@ ssh:
       port: 22
       type: ecdsa-sha2-nistp256
       digest: SUSDcJ5Bv+sd89VHTx976GVy1SU5k2TQiIc5NcP2efI=
+    - host: k8s.aistar.info
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: YQG/2DTb54TGBNCY9RcBJSOxnGpAoEcsl8cPoYR4KCI=
 clickableLinks: {}
 accessibility: {}
 appearance: {}
@@ -582,4 +591,46 @@ profiles:
     name: sangfor-a800-gpu02
     type: ssh
     id: ssh:custom:sangfor-a800-gpu02:59a2b5d4-6892-4f1b-984b-667bcb1acf27
-
+  - name: k8s-gateway
+    icon: fas fa-server
+    options:
+      host: k8s.aistar.info
+      algorithms: {}
+      input: {}
+      agentForward: true
+    weight: -1
+    group: 8908f4e2-fa62-4947-8ee5-ec9329c8c673
+    id: ssh:custom:k8s-gateway:821e9900-99ea-4251-8404-ad8e7925e770
+    type: ssh
+workspaceManager: {}
+highlightPlugin:
+  highlightProfiles:
+    - name: Default
+      keywords:
+        - text: ERROR
+          enabled: true
+          background: true
+          backgroundColor: '1'
+        - text: WARN
+          enabled: true
+          background: true
+          backgroundColor: '3'
+        - text: INFO
+          enabled: true
+          background: true
+          backgroundColor: '6'
+        - text: 错误
+          enabled: true
+          background: true
+          backgroundColor: '1'
+        - text: 警告
+          enabled: true
+          background: true
+          backgroundColor: '3'
+        - text: 信息
+          enabled: true
+          background: true
+          backgroundColor: '6'
+  highlightEnabled: true
+docker:
+  socket: /var/run/docker.sock

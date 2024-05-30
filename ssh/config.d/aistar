@@ -23,17 +23,32 @@ Host ai-sz02.aistar.info
 	User yobol
 	ForwardAgent yes
 
-Host a800-gpu01
-	HostName 172.16.24.101
-	User yobol
-	ForwardAgent yes
+######## AI HUB ########
 
-Host a800-gpu02
-	HostName 172.16.24.102
-	User yobol
-	ForwardAgent yes
+Host a800-2.ai-hub.aistar.info
+  Hostname 172.31.80.1
+  User yobol
+
+Host *.ai-hub.aistar.info !a800-2.ai-hub.aistar.info
+  ProxyJump a800-2.ai-hub.aistar.info
+
+######## AI HUB ########  
+
+######## Cloud K8S for Testing ########
 
 Host k8s-gateway
 	HostName k8s.aistar.info
 	User yobol
 	ForwardAgent yes
+
+Host k8s-1
+    User yobol
+    ProxyJump k8s.aistar.info
+    ForwardAgent yes
+
+Host puppet
+    User yobol
+    ProxyJump k8s.aistar.info
+    ForwardAgent yes
+
+######## Cloud K8S for Testing ########
